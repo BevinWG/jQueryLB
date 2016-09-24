@@ -1,6 +1,7 @@
 //Problem: THe user when clicking on image goes to a deadend and isn't userfriendly
 //Solution: Create an overlay with a large image - LIGHTBOX
-
+$( function(){
+    
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("img");
 var $caption = $("<p></p>");
@@ -39,3 +40,4 @@ $overlay.click(function(){
     //Hide the overlay
     $overlay.hide();
 })
+});
