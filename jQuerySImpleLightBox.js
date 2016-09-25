@@ -3,7 +3,7 @@
 $( function(){
     
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("img");
+var $image = $("<img />");
 var $caption = $("<p></p>");
 //An image to overlay
 
@@ -39,5 +39,5 @@ $caption.text(captionText);
 $overlay.click(function(){
     //Hide the overlay
     $overlay.hide();
-})
+});
 });
